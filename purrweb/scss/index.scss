@@ -1,0 +1,51 @@
+@import "./_reset.scss";
+@import "./_media.scss";
+@import "./_mixins.scss";
+@import "./_fonts.scss";
+@import "./_header.scss";
+@import "./_applications.scss";
+@import "./_platform.scss";
+@import "./_partner.scss";
+@import "./_mission.scss";
+@import "./_cookie.scss";
+@import "./_scanner.scss";
+@import "./_integration.scss";
+@import "./_qrcode.scss";
+@import "./_generate.scss";
+@import "./_ordering.scss";
+@import "./_form.scss";
+@import "./_touch.scss";
+@import "./_notab.scss";
+@import "./_footer.scss";
+
+body {
+  background-color: #000;
+  color: #fff;
+ 
+}
+
+.container {
+  padding: 0 15px;
+
+  @include md {
+    padding: 0 85px;
+  }
+}
+
+.title {
+  @include font("Montserrat-Bold", 24px);
+  margin-bottom: 25px;
+
+  @include md {
+    font-size: 51px
+  }
+}
+
+.description {
+  @include font("NotoSans-Regular", 16px);
+  line-height: 22px;
+
+  @include md {
+    font-size: 18px;
+  }
+}

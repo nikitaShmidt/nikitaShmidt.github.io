@@ -1,0 +1,53 @@
+.partner {
+  margin: 60px 0 120px 0;
+
+  @include md {
+    margin: 60px 0 250px 0;
+  }
+
+  &__items {
+    @include md {
+      @include flex-all-center;
+      gap: 81px;
+    }
+  }
+
+  &__item {
+    padding: 40px 33px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @include md {
+      margin: 0;
+      height: 310px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text {
+    @include font("NotoSans-Bold", 24px);
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
+
+  &__email,
+  &__login {
+    @include font("NotoSans-Regular", 18px);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

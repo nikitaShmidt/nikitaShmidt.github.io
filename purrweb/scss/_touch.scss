@@ -1,0 +1,20 @@
+.touch {
+  position: relative;
+  overflow-x: clip;
+  margin-bottom: 80px;
+  text-align: center;
+
+  &__description {
+    margin-bottom: 50px;
+  }
+
+  &::after {
+    @include gradient;
+    filter: blur(45px);
+    opacity: 0.15;
+    right: -100px;
+    bottom: -140px;
+    width: 300px;
+    height: 300px;
+  }
+}

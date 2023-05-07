@@ -1,0 +1,23 @@
+.applications {
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include font("Montserrat-Bold", 24px);
+  }
+
+  &__items {
+    @include flex-all-center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__image {
+    @include lg {
+      transition: 0.3s all;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.qrcode {
+  overflow-x: clip;
+  margin-bottom: 45px;
+  position: relative;
+
+  @include lg {
+    margin-bottom: 350px;
+
+    .applications {
+      &__items {
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__bgs {
+    @include lg {
+      display: flex;
+      height: 500px;
+    }
+  }
+
+  &__bg {
+    position: relative;
+    background: url("../img/qrcode-bg.png") no-repeat center/cover;
+    height: 250px;
+    @include shadow;
+
+    @include md {
+      height: 500px;
+    }
+
+    @include lg {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  &__title,
+  &__description {
+    transform: translateY(-50px);
+  }
+
+  &__description {
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__nightlife {
+    &-bg {
+      background: url("../img/nightlife-bg.png") no-repeat center/cover;
+      height: 250px;
+      margin-top: 65px;
+      transform: translateX(50px);
+      position: relative;
+
+      &::before {
+        content: "";
+        background: url("../img/svg/nightlife.svg") no-repeat center/cover;
+        position: absolute;
+        left: -10px;
+        top: 80px;
+        width: 90px;
+        height: 50px;
+
+        @include xs {
+          left: calc(50% - 200px);
+        }
+      }
+
+      @include xs {
+        background: url("../img/nightlife-bg-big.png") no-repeat center/cover;
+        background-size: 400px 350px;
+      }
+    }
+
+    &-mobile {
+      @include lg {
+        display: none;
+      }
+    }
+
+    &-desktop {
+      display: none;
+
+      @include lg {
+        width: 50%;
+        background-size: 100%;
+        transform: translate(0);
+        height: 100%;
+        margin-top: 0;
+
+        &::before {
+          left: unset;
+          right: 60px;
+          top: -20px;
+          width: 140px;
+          height: 75px;
+        }
+        display: block;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    transform: translateY(-80px);
+
+    @include lg {
+      flex-direction: row;
+      position: absolute;
+      top: calc(50% + 100px);
+      left: calc(50% + 200px);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__mobile {
+    width: 280px;
+    height: 560px;
+    object-fit: cover;
+
+    &-two {
+      @include lg {
+        transform: translateY(250px);
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.footer {
+  padding-bottom: 20px;
+  position: relative;
+  overflow-x: clip;
+  overflow-y: clip;
+
+  &::after {
+    @include gradient;
+    filter: blur(45px);
+    left: -70px;
+    bottom: -60px;
+    opacity: 0.25;
+    width: 300px;
+    height: 300px;
+  }
+
+  @include lg {
+    .applications {
+      &__items {
+        flex-direction: row;
+        gap: 60px;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 60px 0;
+    gap: 20px;
+    @include font("Avenir-Bold", 18px);
+
+    @include lg {
+      order: 2;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+
+    @include lg {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contacts {
+    @include flex-all-center;
+    flex-direction: column;
+    gap: 15px;
+
+    @include lg {
+      align-items: start;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    @include font("Gilroy-Bold", 20px);
+    color: currentColor;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  &__contact {
+    @include font("Avenir-Medium", 14px);
+
+    @include lg {
+      font-size: 18px;
+    }
+  }
+
+  &__email {
+    color: currentColor;
+    text-decoration: none;
+
+    @include lg {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__copyright {
+    @include font("Avenir-Bold", 14px);
+
+    @include lg {
+      font-size: 18px;
+    }
+  }
+}

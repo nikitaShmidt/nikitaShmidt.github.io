@@ -1,0 +1,64 @@
+.scanner {
+  margin-bottom: 145px;
+
+  @include md {
+    margin-bottom: 0;
+  }
+
+  &__container {
+    @include md {
+      display: flex;
+      gap: 50px;
+    }
+
+    @include lg {
+      gap: 130px;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+     @include md {
+      width: 320px;
+order: 2;
+     }
+  }
+
+  &__bg {
+    position: relative;
+    background: url("../img/scanner-bg.png") no-repeat center/cover;
+    height: 250px;
+    @include shadow;
+
+    @include md {
+      height: 750px;
+    }
+  }
+
+  &__title {
+    transform: translateY(-15px);
+  }
+
+  &__description {
+    margin-bottom: 60px;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+
+    @include md {
+      position: relative;
+      top: -350px;
+      flex-direction: row;
+    }
+  }
+
+  &__mobile {
+    width: 280px;
+    height: 575px;
+    object-fit: cover;
+  }
+}

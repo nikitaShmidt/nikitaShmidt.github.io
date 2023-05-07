@@ -1,0 +1,75 @@
+.mission {
+  overflow-x: clip;
+  &__container {
+    @include md {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    @include md {
+      order: 2;
+      width: 400px;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: rgb(241, 1, 191);
+      opacity: 0.5;
+      top: -25px;
+      left: -15px;
+      width: 85px;
+      height: 85px;
+      filter: blur(40px);
+      
+      @include md {
+        left: unset;
+        right: 100px;
+      }
+    }
+  }
+
+  &__description {
+    margin-bottom: 160px;
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 105px;
+
+    @include md {
+      margin-bottom: 0;
+      transform: rotate(90deg);
+      position: relative;
+      top: -100px;
+      left: -50px;
+    }
+
+    @include lg {
+      top: -200px;
+      border-radius: 70px;
+    }
+  }
+
+  &__mobile {
+    width: 170px;
+    height: 340px;
+
+    @include md {
+      width: 300px;
+      height: 500px;
+    }
+
+    @include lg {
+      width: 500px;
+      height: 900px;
+    }
+  }
+}

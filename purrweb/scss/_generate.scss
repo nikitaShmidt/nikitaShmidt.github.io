@@ -1,0 +1,97 @@
+.generate {
+  margin-bottom: 200px;
+
+  @include lg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container {
+    @include lg {
+      order: 2;
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    margin-bottom: 80px;
+
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__images {
+    text-align: center;
+    position: relative;
+  }
+
+  &__gradient {
+    position: absolute;
+    background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
+    filter: blur(45px);
+    border-radius: 100%;
+    opacity: 0.15;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      right: calc(50% - 130px);
+      transform: translateX(50%);
+      width: 36px;
+      height: 110px;
+      background: url("../img/svg/arrow-generate.svg") no-repeat center / cover;
+
+      @include lg {
+        right: calc(50% - 275px );
+        bottom: unset;
+        top: 150px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__mobile {
+    width: 180px;
+    height: 365px;
+    object-fit: cover;
+
+    @include lg {
+      width: 300px;
+      height: 600px;
+    }
+  }
+
+  &__text {
+    @include font("Montserrat-Bold", 18px);
+    position: absolute;
+    bottom: -80px;
+    right: calc(50% - 90px);
+    transform: translateX(50%);
+
+    @include lg {
+      bottom: unset;
+      top: 250px;
+      right:calc(50% - 360px) ;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+    padding: 18px 10px;
+    color: #bfbfbf;
+    @include font("NotoSans-Regular", 16px);
+
+    &::placeholder {
+      color: #bfbfbf;
+    }
+
+    @include lg {
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+  }
+
+  &__input {
+    height: 57px;
+    margin-bottom: 16px;
+  }
+
+  &__wrapper {
+    @include md {
+      display: flex;
+      gap: 25px;
+    }
+  }
+
+  &__textarea {
+    height: 140px;
+    resize: none;
+    margin-bottom: 40px;
+  }
+
+  &__send {
+    max-width: 345px;
+    min-width: 290px;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 100%;
+    height: 80px;
+    @include font("Montserrat-Bold", 24px);
+    color: currentColor;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.3s all;
+
+    @include lg {
+      cursor: pointer;
+    }
+
+    @include lg {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

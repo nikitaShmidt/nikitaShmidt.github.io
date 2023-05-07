@@ -1,0 +1,185 @@
+.integration {
+  overflow-x: clip;
+  margin-bottom: 65px;
+
+  @include md {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 300px;
+  }
+
+  &__container {
+    @include md {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+
+    @include md {
+      width: 400px;
+    }
+  }
+
+  &__items {
+    position: relative;
+    height: 250px;
+
+    @include md {
+      width: 75%;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 25px;
+  }
+
+  &__circles {
+    position: absolute;
+    left: 25px;
+    top: 55px;
+
+    @include sm {
+      &-image {
+        width: 230px;
+        height: 45px;
+      }
+    }
+
+    @include md {
+      left: unset;
+      right: 200px;
+      top: 80px;
+    }
+
+    @include xl {
+      top: 110px;
+      right: 400px;
+    }
+  }
+
+  &__table {
+    right: 75px;
+    top: 30px;
+    z-index: 2;
+    padding: 10px;
+    background-color: #000;
+
+    &-image {
+      @include sm {
+        width: 150px;
+        height: 65px;
+      }
+    }
+
+    @include sm {
+      right: 195px;
+      top: 15px;
+    }
+
+    @include md {
+      top: 195px;
+      right: 230px;
+      padding: 20px;
+    }
+
+    @include xl {
+      right: 290px;
+    }
+  }
+
+  &__graph {
+    padding: 11px;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+
+    &-image {
+      @include sm {
+        width: 150px;
+        height: 60px;
+      }
+    }
+
+    @include md {
+      padding: 20px;
+      top: 290px;
+      right: 470px;
+    }
+  }
+
+  &__chart {
+    padding: 14px;
+    top: 125px;
+    left: -48px;
+
+    &-image {
+      width: 115px;
+      height: 60px;
+
+      @include sm {
+        width: 200px;
+        height: 100px;
+      }
+    }
+
+    @include md {
+      top: -70px;
+      right: 200px;
+      left: unset;
+    }
+  }
+
+  &__schedule {
+    display: none;
+
+    @include xl {
+      display: block;
+      position: absolute;
+      top: 165px;
+      left: unset;
+      right: 550px;
+    }
+  }
+
+  &__semicircle {
+    right: -5px;
+    top: -5px;
+    padding: 12px;
+
+    &-image {
+      @include sm {
+        width: 120px;
+        height: 130px;
+      }
+    }
+
+    @include md {
+      top: 100px;
+      right: -40px;
+    }
+
+    @include xl {
+      right: 155px;
+    }
+  }
+
+  &__data {
+    position: absolute;
+    right: -95px;
+    top: 190px;
+
+    @include sm {
+      right: 15px;
+    }
+
+    @include md {
+      top: 350px;
+    }
+  }
+}
