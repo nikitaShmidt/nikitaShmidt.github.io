@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+@import "_reset.scss";
+@import "_header.scss";
+@import "_presentation.scss";
+@import "_footer.scss";
+
+body {
+  background: url('../img/bg.png') center/cover ;
+  height: 100vh;
+}
+.container {
+  padding: 0 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 10px;
+  }
+}
