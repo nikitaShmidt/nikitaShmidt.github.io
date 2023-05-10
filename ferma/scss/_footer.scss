@@ -1,0 +1,27 @@
+.footer {
+  margin-bottom: 60px;
+
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items:center;
+      gap: 20px;
+    }
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
