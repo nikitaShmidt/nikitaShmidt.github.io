@@ -10,7 +10,7 @@
 `Lampadari ` https://nikitashmidt.github.io/lampadari/ <br>
 `Lampadari ` https://nikitashmidt.github.io/lampadari/ <br>
 `Purrweb Test ` https://nikitashmidt.github.io/purrweb/ <br>
-`Purrweb Slider ` https://nikitashmidt.github.io/purrweb/slider/slider.html
+`Purrweb Slider ` https://nikitashmidt.github.io/purrweb/slider/slider.html <br>
 `Ferma Test ` https://nikitashmidt.github.io/ferma/ <br>
 `Todo App ` https://nickycostello.netlify.app/  <br>
 `React JS projects ` https://friendly-gaufre-ab4acc.netlify.app/ <br>
