@@ -1,5 +1,5 @@
-# nikitashmidt.github.io
-[nikitashmidt.github.io](https://nikitashmidt.github.io/)
+# [nikitashmidt.github.io](https://nikitashmidt.github.io/)
+
 
 `Portfolio ` https://nikitashmidt.github.io/portfolio/ <br>
 `Uber ` https://nikitashmidt.github.io/uber/ <br>
