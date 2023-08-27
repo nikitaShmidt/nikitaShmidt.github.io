@@ -1,16 +1,14 @@
 # [nikitashmidt.github.io](https://nikitashmidt.github.io/)
 
-## Works:
+## Work:
 
 `Portfolio ` https://nikitashmidt.github.io/portfolio <br>
 `Uber ` https://nikitashmidt.github.io/uber <br>
-`Pulse ` https://nikitashmidt.github.io/pulse <br>
 `Pulse ` https://nikitashmidt.github.io/pulse <br>
 `Global OPT ` https://nikitashmidt.github.io/globalOpt <br>
 `Prengi ` https://nikitashmidt.github.io/prengi <br>
 `Home OWD ` https://nikitashmidt.github.io/homeOwd <br>
 `Cude ` https://nikitashmidt.github.io/cuda <br>
-`Lampadari ` https://nikitashmidt.github.io/lampadari <br>
 `Lampadari ` https://nikitashmidt.github.io/lampadari <br>
 `Purrweb Test ` https://nikitashmidt.github.io/purrweb <br>
 `Purrweb Slider ` https://nikitashmidt.github.io/purrweb/slider/slider.html <br>
