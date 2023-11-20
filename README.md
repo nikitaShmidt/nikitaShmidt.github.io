@@ -17,4 +17,3 @@
 `React JS projects ` https://friendly-gaufre-ab4acc.netlify.app <br>
 `Gallery App ` https://tranquil-hotteok-e76864.netlify.app <br>
 `Art Gallery ` https://silly-empanada-585c24.netlify.app <br>
-`FrontendJuniors ` https://frontendjuniors.netlify.app/
